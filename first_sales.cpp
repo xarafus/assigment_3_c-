@@ -10,13 +10,13 @@ public:
     salesinfo() : totalExpenses(0), totalSales(0), totalRevenue(0), totalProducts(0) {}
     friend class ownerCompany;
     void totalnums() {
-        cout << "Enter total expenses: ";
+        cout << "enter total expenses: ";
         cin >> totalExpenses;
-        cout << "Enter total sales value: ";
+        cout << "enter total sales value: ";
         cin >> totalSales;
-        cout << "Enter total revenue: ";
+        cout << "enter total revenue: ";
         cin >> totalRevenue;
-        cout << "Enter total products sold: ";
+        cout << "enter total sold: ";
         cin >> totalProducts;
         cout << endl; }
 };
@@ -30,18 +30,18 @@ public:
         int grandTotalProducts = outlet1.totalProducts + outlet2.totalProducts;
 
         cout << " grand total expenses: " << grandTotalExpenses << endl;
-        cout << " grand total sales value: " << grandTotalSales << endl;
+        cout << " grand total sales : " << grandTotalSales << endl;
         cout << " grand total revenue: " << grandTotalRevenue << endl;
-        cout << " grand total products sold: " << grandTotalProducts << endl;
+        cout << " grand total sold: " << grandTotalProducts << endl;
     }
 };
 
 int main() {
     salesinfo outlet1, outlet2;
     ownerCompany owner;
-    cout << "what are the sales sales of first" << endl;
+    cout << "sales of first" << endl;
     outlet1.totalnums();
-    cout << "what are the sales sales of second" << endl;
+    cout << "sales sales of second" << endl;
     outlet2.totalnums();
     owner.calculatingnums(outlet1, outlet2);
 }
